@@ -1,6 +1,6 @@
 # itera
 
-[![npm version](https://badge.fury.io/js/joi.svg)](http://badge.fury.io/js/itera)
+[![npm version](https://badge.fury.io/js/itera.svg)](http://badge.fury.io/js/itera)
 [![Build Status](https://travis-ci.org/zoe-1/itera.svg?branch=master)](https://travis-ci.org/zoe-1/itera)
 
 
