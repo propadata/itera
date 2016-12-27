@@ -80,3 +80,5 @@ JavaScript Ninja Second Edition p. 159 listing-6.19.html
 * some inspiration came from co too.
 * Authors: John Resig, Bear Bibeault, Josip Maras
 
+;-)
+
