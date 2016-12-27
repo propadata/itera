@@ -1,7 +1,7 @@
 # itera
 
 mix generators and promises for better control flow.
-Made this for my personal workflow.  [co](https://www.npmjs.com/package/co) will 
+Made this for my personal workflow. \n  Most likely [co](https://www.npmjs.com/package/co) will 
 probably be a better solution for you.
 
 If you do not understand JavaScript generators see:
@@ -17,11 +17,10 @@ const Generator = function * () {
     // ERRORS AND YIELDING PROMISES
     // if a promise executes and resolves with an error.
     // The value of the error resolution "reject()" is placed in the
-    // variable associated with the yield at the execution of the next
-    // promise.
+    // variable associated with the yield.
 
 
-    const path = yield getPath(internals.errorStatus);
+    const path = yield getPath();
 
     if (path instanceof Error) {
 
@@ -36,7 +35,7 @@ const Generator = function * () {
 
     console.log(path);
 
-    const fileName = yield getFileName(internals.errorStatus);
+    const fileName = yield getFileName();
 
     if ( (fileName.name !== undefined) && (fileName.name === 'Error')) {
 

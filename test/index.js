@@ -142,8 +142,7 @@ lab.experiment('proof', () => {
 
     lab.test('test proof dev', (done) => {
 
-        console.log('inside test');
-        expect('inside test').to.exist('inside test');
+        expect('starting tests').to.exist('starting tests');
         done();
     });
 });
