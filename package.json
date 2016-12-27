@@ -1,0 +1,24 @@
+{
+  "name": "itera",
+  "version": "0.0.1",
+  "description": "mix generators and promises",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoe-1/itera.git"
+  },
+  "keywords": [
+    "generators",
+    "promises",
+    "iterator"
+  ],
+  "author": "Jon Swenson",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/zoe-1/itera/issues"
+  },
+  "homepage": "https://github.com/zoe-1/itera#readme"
+}
