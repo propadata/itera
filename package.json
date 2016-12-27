@@ -4,7 +4,7 @@
   "description": "mix generators and promises",
   "main": "lib/index.js",
   "scripts": {
-    "test": "test"
+    "test": "lab -a code -t 100 -L -v"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/zoe-1/itera/issues"
   },
-  "homepage": "https://github.com/zoe-1/itera#readme"
+  "homepage": "https://github.com/zoe-1/itera#readme",
+  "devDependencies": {
+    "code": "^4.0.0",
+    "lab": "^11.2.1"
+  }
 }

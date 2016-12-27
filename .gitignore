@@ -35,3 +35,23 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+.idea
+*.iml
+npm-debug.log
+dump.rdb
+node_modules
+results.tap
+results.xml
+config.json
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+._*
+*/._*
+*/*/._*
+coverage.*
+.settings
+test/fixtures/awesomeLog.json
+log
+
