@@ -76,7 +76,7 @@ JavaScript Ninja Second Edition p. 159 listing-6.19.html
   and to get the code ready for use in my projects.
 * Authors: John Resig, Bear Bibeault, Josip Maras
 
-co https://www.npmjs.com/package/co 
+[co](https://www.npmjs.com/package/co)
 * some inspiration came from co too.
 * Authors: John Resig, Bear Bibeault, Josip Maras
 
