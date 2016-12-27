@@ -1,9 +1,13 @@
 # itera
 
+[![npm version](https://badge.fury.io/js/itera.svg)](http://badge.fury.io/js/itera)
+[![Build Status](https://travis-ci.org/zoe-1/itera.svg?branch=master)](https://travis-ci.org/zoe-1/itera)
+
+
 itera for promise iteration needs.
 Mix generators and promises for better control flow.
-Made this for my personal workflow. \n  Most likely [co](https://www.npmjs.com/package/co) will 
-probably be a better solution for you.
+Made this for my personal workflow. Most likely [co](https://www.npmjs.com/package/co) will 
+be a better solution for you.
 
 If you do not understand JavaScript generators see:
 * [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
