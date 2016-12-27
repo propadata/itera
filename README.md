@@ -1,6 +1,8 @@
 # itera
 
-mix generators and promises for better control flow.
+itera for promise iteration needs.
+
+Mix generators and promises for better control flow.
 Made this for my personal workflow. \n  Most likely [co](https://www.npmjs.com/package/co) will 
 probably be a better solution for you.
 
