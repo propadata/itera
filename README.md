@@ -1,7 +1,6 @@
 # itera
 
 itera for promise iteration needs.
-
 Mix generators and promises for better control flow.
 Made this for my personal workflow. \n  Most likely [co](https://www.npmjs.com/package/co) will 
 probably be a better solution for you.
@@ -80,7 +79,7 @@ JavaScript Ninja Second Edition p. 159 listing-6.19.html
 
 [co](https://www.npmjs.com/package/co)
 * some inspiration came from co too.
-* Authors: John Resig, Bear Bibeault, Josip Maras
+* Authors: @tjholowaychuk & @jonathanong 
 
 ;-)
 
