@@ -1,6 +1,6 @@
 {
   "name": "itera",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "mix generators and promises",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoe-1/itera.git"
+    "url": "git+https://github.com/propadata/itera.git"
   },
   "keywords": [
     "generators",
@@ -18,9 +18,9 @@
   "author": "Jon Swenson",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/zoe-1/itera/issues"
+    "url": "https://github.com/propadata/itera/issues"
   },
-  "homepage": "https://github.com/zoe-1/itera#readme",
+  "homepage": "https://github.com/propadata/itera#readme",
   "devDependencies": {
     "code": "^4.0.0",
     "lab": "^11.2.1"
