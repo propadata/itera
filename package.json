@@ -24,5 +24,8 @@
   "devDependencies": {
     "code": "^4.0.0",
     "lab": "^11.2.1"
+  },
+  "dependencies": {
+    "hoek": "^4.1.0"
   }
 }
