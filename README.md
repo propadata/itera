@@ -16,7 +16,13 @@ If you do not understand JavaScript generators see:
 
 ### Example
 
+#### NOTE: below step1() step2() step3() functions all return promises.
+
+see tests for code that matches the README.  
+
 ```
+
+
 const Generator = function * () {
 
     // ERRORS AND YIELDING PROMISES
@@ -24,54 +30,60 @@ const Generator = function * () {
     // The value of the error resolution "reject()" is placed in the
     // variable associated with the yield.
 
+    const result1 = yield step1();
 
-    const path = yield getPath();
+    if (result1 instanceof Error) {
 
-    if (path instanceof Error) {
-
-        // HANDLE THE ERROR
-        // console.log(path.message);
-        // console.log(path.name);
-        return; // exits the generator.
+        // console.log(typeof result1);
+        // console.log(result1.message);
+        // console.log(result1.name);
+        // console.log('ERROR');
+        return callback(result1, null);
     }
 
 
-    // path yield SUCCESS DO STUFF with path  
+    // result1 yield SUCCESS DO STUFF with result1  
 
-    console.log(path);
+    console.log(result1);
 
-    const fileName = yield getFileName();
+    const result2 = yield step2();
 
-    if ( (fileName.name !== undefined) && (fileName.name === 'Error')) {
+    if ( (result2.name !== undefined) && (result2.name === 'Error')) {
 
         // HANDLE THE ERROR
-        // console.log(fileName.message);
-        // console.log(fileName.name);
+        // console.log(result2.message);
+        // console.log(result2.name);
         console.log('ERROR');
         return; // exit the generator.
     }
 
-    console.log(fileName);
+    console.log(result2);
     // return; exits generator early if error exists.
 
 
-    const read = yield readFile(internals.errorStatus);
+    const result3 = yield step3();
 
-    if ( (read.name !== undefined) && (read.name === 'Error')) {
+    if ( (result3.name !== undefined) && (result3.name === 'Error')) {
 
-        // console.log(typeof fileName);
-        // console.log(fileName.message);
-        // console.log(fileName.name);
-        // console.log(read);
+        // console.log(typeof result3);
+        // console.log(result3.message);
+        // console.log(result3.name);
+        // console.log(result3);
         console.log('ERROR');
     }
 
-    console.log(read);
+    console.log(result3);
 
     return;
 };
 
-Itera(Generator);
+const callback = function (err, result) {
+
+    // do stuff after generator is complete.
+
+};
+
+Itera(Generator, callback);
 ```
 
 

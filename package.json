@@ -1,6 +1,6 @@
 {
   "name": "itera",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "mix generators and promises",
   "main": "lib/index.js",
   "scripts": {
@@ -24,5 +24,8 @@
   "devDependencies": {
     "code": "^4.0.0",
     "lab": "^11.2.1"
+  },
+  "dependencies": {
+    "hoek": "^4.1.0"
   }
 }
