@@ -1,6 +1,6 @@
 {
   "name": "itera",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "mix generators and promises",
   "main": "lib/index.js",
   "scripts": {
