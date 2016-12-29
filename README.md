@@ -22,6 +22,9 @@ Below step1() step2() step3() functions all return promises.
 See [tests code](https://github.com/propadata/itera/blob/master/test/index.js) for full 
 implementation of below generator logic.  
 
+Plus, [itera-sample](https://github.com/propadata/itera-sample) is a simple project 
+showing itera in action.
+
 ```
 
 
