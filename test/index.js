@@ -44,12 +44,8 @@ const step3 = function (test) {
             internals.errorStatus = null;
             reject(new Error('step3 failed'));
         }
-        // console.log('entered step3');
-        // reject('boom');
 
-        // reject(new Error('step3 failed'));
         resolve('SUCCESS: yielded all promises');
-        // reject("An error occurred. Go to Camden.");
     });
 };
 

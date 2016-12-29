@@ -16,7 +16,13 @@ If you do not understand JavaScript generators see:
 
 ### Example
 
+#### NOTE: below step1() step2() step3() functions all return promises.
+
+see tests for code that matches the README.  
+
 ```
+
+
 const Generator = function * () {
 
     // ERRORS AND YIELDING PROMISES
