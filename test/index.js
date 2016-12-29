@@ -19,7 +19,6 @@ const step1 = function () {
             reject(new Error('step1 failed'));
         }
 
-
         resolve('SUCCESS: Get Path');
     });
 };
@@ -64,48 +63,48 @@ const Generator = function * (callback) {
     // promise.
 
 
-    const path = yield step1(internals.errorStatus);
+    const result1 = yield step1(internals.errorStatus);
 
-    if (path instanceof Error) {
+    if (result1 instanceof Error) {
 
-        // console.log(typeof path);
-        // console.log(path.message);
-        // console.log(path.name);
+        // console.log(typeof result1);
+        // console.log(result1.message);
+        // console.log(result1.name);
         // console.log('ERROR');
-        return callback(path, null);
+        return callback(result1, null);
     }
 
-    // console.log(path);
+    // console.log(result1);
 
-    const fileName = yield step2(internals.errorStatus);
+    const result2 = yield step2(internals.errorStatus);
 
-    if ( (fileName.name !== undefined) && (fileName.name === 'Error')) {
+    if ( (result2.name !== undefined) && (result2.name === 'Error')) {
 
-        // console.log(typeof fileName);
-        // console.log(fileName.message);
-        // console.log(fileName.name);
+        // console.log(typeof result2);
+        // console.log(result2.message);
+        // console.log(result2.name);
         // console.log('ERROR');
-        return callback(fileName, null); // return stops generator & callback executes.
+        return callback(result2, null); // return stops generator & callback executes.
     }
 
-    // console.log(fileName);
+    // console.log(result2);
     // return; exits generator early if error exists.
 
 
-    const read = yield step3(internals.errorStatus);
+    const result3 = yield step3(internals.errorStatus);
 
-    if ( (read.name !== undefined) && (read.name === 'Error')) {
+    if ( (result3.name !== undefined) && (result3.name === 'Error')) {
 
-        // console.log(fileName.message);
-        // console.log(fileName.name);
-        // console.log(read);
+        // console.log(step3Result.message);
+        // console.log(step3Result.name);
+        // console.log(result3);
         // console.log('ERROR');
-        return callback(read, null); // return stops generator & callback executes.
+        return callback(result3, null); // return stops generator & callback executes.
     }
 
-    // console.log(read);
+    // console.log(result3);
 
-    return callback(null, read);
+    return callback(null, result3);
 };
 
 const Generator2 = function * (callback) {
@@ -117,24 +116,24 @@ const Generator2 = function * (callback) {
     // promise.
 
 
-    const path = yield step1(internals.errorStatus);
+    const result1 = yield step1(internals.errorStatus);
 
-    if (path instanceof Error) {
+    if (result1 instanceof Error) {
 
-        // console.log(typeof path);
-        // console.log(path.message);
-        // console.log(path.name);
+        // console.log(typeof result1);
+        // console.log(result1.message);
+        // console.log(result1.name);
         // console.log('ERROR');
-        return callback(path, null);
+        return callback(result1, null);
     }
 
-    // console.log(path);
+    // console.log(result1);
 
     const boom = yield 'string to fail';
-    // console.log(read);
+    // console.log(result3);
     console.log(boom);
 
-    return callback(null, read);
+    return callback(null, result3);
 };
 
 lab.experiment('proof', () => {
