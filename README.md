@@ -16,9 +16,11 @@ If you do not understand JavaScript generators see:
 
 ### Example
 
-#### NOTE: below step1() step2() step3() functions all return promises.
+#### NOTE: 
 
-see tests for code that matches the README.  
+Below step1() step2() step3() functions all return promises.
+See [tests code](https://github.com/propadata/itera/blob/master/test/index.js) for full 
+implementation of below generator logic.  
 
 ```
 
